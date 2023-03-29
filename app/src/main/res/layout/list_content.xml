@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:background="@drawable/button_style"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="15sp">
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="Product Name"
+            android:padding="15dp"
+            android:layout_centerVertical="true"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="37dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="180dp"
+            android:padding="15dp"
+            android:layout_centerVertical="true"
+            android:text="Qty"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="37dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/subTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="270dp"
+            android:padding="15dp"
+            android:layout_centerVertical="true"
+            android:text="subTotal"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="37dp"
+            tools:ignore="MissingConstraints" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

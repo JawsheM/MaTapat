@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE7AB"
+    tools:context=".CartList">
+    <include layout="@layout/toolbar"></include>
+
+    <RelativeLayout
+        android:id="@+id/relativeCartTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:background="#FFDA7D"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/cartProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:text="Product Name">
+        </TextView>
+
+        <TextView
+            android:id="@+id/cartQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_marginStart="180dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:text="Qty">
+        </TextView>
+
+        <TextView
+            android:id="@+id/cartSubtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="255dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:text="Sub Total">
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/CheckoutPlace"
+        android:layout_marginTop="629dp"
+        android:background="#FFBF3C"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="15dp">
+
+
+        <TextView
+            android:id="@+id/SubTotalOverAll"
+            android:maxLength="11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:text="PHP"
+            android:fontFamily="sans-serif-smallcaps"
+            >
+        </TextView>
+
+        <Button
+            android:id="@+id/checkoutBtn"
+
+            android:layout_centerVertical="true"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            app:backgroundTint="#FA842C"
+
+            android:background="@drawable/button_style"
+            android:drawableTint="@color/white"
+            android:drawableStart="@drawable/ic_baseline_shopping_cart_24"
+            android:gravity="center"
+            android:paddingLeft="12sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30dp"
+
+            android:text="Checkout"
+
+            />
+
+        <Button
+            android:id="@+id/deleteBtn"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_style"
+
+            android:drawableStart="@android:drawable/ic_delete"
+            android:drawableTint="@color/white"
+            android:gravity="center"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            app:backgroundTint="#FA842C" />
+    </RelativeLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewID"
+        android:layout_width="match_parent"
+        android:layout_height="525dp"
+        android:layout_below="@id/relativeCartTitle"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        />
+
+</RelativeLayout>
